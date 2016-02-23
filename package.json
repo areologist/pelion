@@ -1,0 +1,39 @@
+{
+  "name": "pelion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/areologist/pelion.git"
+  },
+  "author": "areologist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/areologist/pelion/issues"
+  },
+  "homepage": "https://github.com/areologist/pelion#readme",
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^5.0.0",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.9.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.5.1",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
