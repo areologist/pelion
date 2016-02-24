@@ -12,10 +12,16 @@ class Header extends React.Component {
           </div>
           <div className="navigation">
             <ul>
-              <li><a href="#">Why</a></li>
-              <li><a href="#">Why Not</a></li>
+              <li><a href="#">Examples</a></li>
+              <li><a href="#">Docs</a></li>
             </ul>
           </div>
+        </div>
+        <div className="container block">
+          <h2>This is kind of awesome</h2>
+          <p>
+            And if you don't believe me you can <a href="">eat a lemon</a>.
+          </p>
         </div>
       </header>
     );

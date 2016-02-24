@@ -1,26 +1,37 @@
-@import url(http://fonts.googleapis.com/css?family=Lato)
+@import url('http://fonts.googleapis.com/css?family=Open+Sans')
 
 $bgColor = #fff
 $textColor = #404040
 $linkColor = #2079DC
 $linkAccentColor = #63b6e5
 
-$darkBgColor = #5c6570
-$darkTextColor = #ced1d4
+$darkBgColor = #4787A7
+$darkTextColor = #d8eaf3
 $darkLinkColor = #fff
 $darkLinkAccent = #fff
 
 body
   color: $textColor
-  font-family 'Lato', sans-serif
+  font-family 'Open Sans', sans-serif
   height: 100%
 
 .container
   margin: 0 auto
-  max-width: 900px
+  max-width: 800px
+  overflow: hidden
+  position: relative
+
+.section
+  margin-top: 45px
+
+.block
+  margin-bottom: 35px
 
 a
   color: $linkColor
   &:hover
     color: $linkAccentColor
   text-decoration: none
+
+h1
+  font-size: 2.2em
