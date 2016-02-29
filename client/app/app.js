@@ -1,6 +1,9 @@
 import 'normalize.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Main from './components/main';
+import ReactDom from 'react-dom';
+import { Router, browserHistory } from 'react-router';
+import routes from './routes';
 
-ReactDOM.render(<Main />, document.getElementById('app'));
+ReactDom.render(
+  <Router routes={routes} history={browserHistory} />,
+  document.getElementById('app'));

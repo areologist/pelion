@@ -1,5 +1,6 @@
 import './header.styl';
 import React from 'react';
+import NavLink from './nav-link';
 
 class Header extends React.Component {
 
@@ -8,20 +9,16 @@ class Header extends React.Component {
       <header>
         <div className="container">
           <div className="logo">
-            <h1>Pelion</h1>
+            <h1>
+              <NavLink to="/" onlyActiveOnIndex>Pelion</NavLink>
+            </h1>
           </div>
           <div className="navigation">
-            <ul>
-              <li><a href="#">Examples</a></li>
-              <li><a href="#">Docs</a></li>
+            <ul role="nav">
+              <li><NavLink to="/projects">Projects</NavLink></li>
+              <li><NavLink to="/about">About</NavLink></li>
             </ul>
           </div>
-        </div>
-        <div className="container block">
-          <h2>This is kind of awesome</h2>
-          <p>
-            And if you don't believe me you can <a href="">eat a lemon</a>.
-          </p>
         </div>
       </header>
     );

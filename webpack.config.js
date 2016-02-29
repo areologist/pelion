@@ -1,6 +1,6 @@
-var webpack  = require('webpack');
-var path     = require('path');
-var HtmlPack = require('html-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
+const HtmlPack = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -8,9 +8,10 @@ module.exports = {
     'webpack/hot/dev-server',
     './client/app/app'
   ],
+
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, 'public'),
+    filename: '/bundle.js'
   },
 
   devtool: 'sourcemap',
@@ -26,14 +27,15 @@ module.exports = {
       { test: /\.styl$/, loader: 'style!css!stylus' },
       { test: /\.css/, loader: 'style!css' },
       {
-        test: /\.js$/, loader: 'babel',
-        exclude: [/client\/lib/, /node_modules/, /\.spec\.js/]
+        test: /\.jsx?$/, loader: 'babel',
+        exclude: [/node_modules/, /\.spec\.js/]
       }
     ]
   },
 
   devServer: {
     contentBase: './dist',
+    hostname: 'mbp',
     hot: true
   }
 };
