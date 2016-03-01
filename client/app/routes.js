@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
-import Main from './components/main';
-import Home from './pages/home';
-import About from './pages/about';
-import Projects from './pages/projects';
-import Project from './pages/project';
+import Page from './layout/page';
+import Home from './components/home';
+import About from './components/about';
+import Projects from './components/projects';
+import Project from './components/project';
 
 module.exports = (
-  <Route path="/" component={Main}>
+  <Route path="/" component={Page}>
     <IndexRoute component={Home} />
     <Route path="/projects" component={Projects} />
     <Route path="/project/:id" component={Project} />

@@ -1,10 +1,9 @@
-import './main.styl';
+import './page.styl';
 import React from 'react';
 import Header from './header';
 import Footer from './footer';
 
-class Main extends React.Component {
-
+class Page extends React.Component {
   render() {
     return (
       <div>
@@ -18,4 +17,4 @@ class Main extends React.Component {
   }
 }
 
-export default Main;
+export default Page;
